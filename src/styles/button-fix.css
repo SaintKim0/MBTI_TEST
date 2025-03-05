@@ -1,0 +1,11 @@
+/* src/styles/button-fix.css */
+.mbti-reset-button,
+.mbti-home-button {
+  height: 40px !important;
+  line-height: 1 !important;
+  padding: 10px 20px !important;
+  box-sizing: border-box !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
