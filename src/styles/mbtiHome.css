@@ -62,6 +62,17 @@
   transition: all 0.3s ease;
 }
 
+/* 모바일 화면에서 세로로 배치 */
+@media (max-width: 768px) {
+  .mbti-question-options {
+    flex-direction: column;
+  }
+
+  .mbti-question-option {
+    width: 100%;
+  }
+}
+
 .mbti-question-option:hover {
   border-color: #2a6496;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -118,4 +129,21 @@
   .mbti-question-options {
     flex-direction: column;
   }
+}
+/* 카드 컨테이너 수정 */
+.mbti-question-option {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* 모든 카드의 높이를 동일하게 설정 */
+  justify-content: space-between; /* 내용과 버튼 사이 공간 분배 */
+}
+
+/* 카드 내용을 감싸는 div 추가 (선택사항) */
+.mbti-question-content {
+  flex-grow: 1; /* 내용이 채울 수 있는 만큼 공간 차지 */
+}
+
+/* 모든 버튼이 같은 위치에 오도록 정렬 */
+.mbti-start-button {
+  margin-top: auto; /* 내용 아래 자동 마진 */
 }
