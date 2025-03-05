@@ -99,6 +99,7 @@
   margin-top: 20px;
 }
 
+
 .mbti-reset-button,
 .mbti-home-button {
   padding: 10px 20px;
@@ -157,4 +158,22 @@
   .progress-percentage {
     margin-bottom: 0;
   }
+}
+/* 버튼 크기 통일 */
+.mbti-reset-button,
+.mbti-home-button,
+.return-home-button {
+  height: 48px; /* 고정 높이 설정 */
+  line-height: 24px; /* 텍스트 수직 중앙 정렬 */
+  box-sizing: border-box; /* 패딩이 높이에 포함되도록 */
+  display: inline-flex; /* 내용 중앙 정렬을 위해 */
+  align-items: center; /* 수직 중앙 정렬 */
+  justify-content: center; /* 수평 중앙 정렬 */
+}
+
+/* 버튼 컨테이너 정렬 */
+.mbti-buttons {
+  display: flex;
+  align-items: center; /* 버튼들이 수직 중앙 정렬되도록 */
+  gap: 15px;
 }
