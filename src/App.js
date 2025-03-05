@@ -84,7 +84,7 @@ function App() {
       </div>
 
       <footer className="app-footer">
-        <p>© 2023 MBTI 성격유형 테스트. All rights reserved.</p>
+        <p>© 2025 MBTI 성격유형 테스트. All rights reserved.</p>
       </footer>
     </div>
   );
